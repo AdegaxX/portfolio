@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leandro Adegas | Ciência de Dados</title>
+<meta name="description" content="Portfólio de Leandro Nascimento Adegas: projetos em ciência de dados, machine learning e visão computacional.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="site-header">
+  <a href="#top" class="logo">Leandro Adegas</a>
+  <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menu">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav-links" id="navLinks">
+    <a href="#sobre">Sobre</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#experiencia">Experiência</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<main id="conteudo">
+
+  <section class="hero" id="top">
+    <div class="hero-text">
+      <h1>Leandro Adegas</h1>
+      <p class="hero-role">Ciência de Dados.</p>
+      <p class="hero-bio">
+        Graduado em Ciência de Dados pela Universidade Federal do Ceará. Trabalho com aprendizado de máquina, processamento de imagens, raspagem de dados e modelos de linguagem, trabalhando para buscar soluções para problemas reais.
+      </p>
+      <div class="hero-links">
+        <a href="mailto:leandroadegas2@gmail.com">leandroadegas2@gmail.com</a>
+        <a href="https://github.com/AdegaxX" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://br.linkedin.com/in/leandroadegas" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 360 320" xmlns="http://www.w3.org/2000/svg">
+        <line x1="20" y1="280" x2="340" y2="280" class="axis"></line>
+        <line x1="20" y1="20" x2="20" y2="280" class="axis"></line>
+        <g class="scatter-normal">
+          <circle cx="70" cy="230" r="4"></circle>
+          <circle cx="95" cy="200" r="4"></circle>
+          <circle cx="110" cy="245" r="4"></circle>
+          <circle cx="130" cy="190" r="4"></circle>
+          <circle cx="140" cy="220" r="4"></circle>
+          <circle cx="155" cy="170" r="4"></circle>
+          <circle cx="160" cy="240" r="4"></circle>
+          <circle cx="175" cy="200" r="4"></circle>
+          <circle cx="185" cy="160" r="4"></circle>
+          <circle cx="90" cy="180" r="4"></circle>
+          <circle cx="120" cy="210" r="4"></circle>
+          <circle cx="145" cy="245" r="4"></circle>
+          <circle cx="165" cy="185" r="4"></circle>
+          <circle cx="105" cy="255" r="4"></circle>
+          <circle cx="200" cy="210" r="4"></circle>
+          <circle cx="210" cy="180" r="4"></circle>
+          <circle cx="80" cy="215" r="4"></circle>
+          <circle cx="60" cy="195" r="4"></circle>
+          <circle cx="130" cy="150" r="4"></circle>
+          <circle cx="195" cy="240" r="4"></circle>
+        </g>
+        <g class="scatter-signal">
+          <circle cx="255" cy="120" r="5"></circle>
+          <circle cx="275" cy="90" r="5"></circle>
+          <circle cx="300" cy="105" r="5"></circle>
+          <circle cx="290" cy="60" r="5"></circle>
+          <circle cx="315" cy="80" r="5"></circle>
+          <circle cx="240" cy="150" r="5"></circle>
+        </g>
+      </svg>
+      <p class="hero-visual-caption">detecção de anomalias — dados cardiovasculares</p>
+    </div>
+  </section>
+
+  <section id="sobre" class="section">
+    <h2>Sobre</h2>
+    <div class="section-body">
+      <p>
+        Durante a formação em Ciência de Dados na UFC, desenvolvi projetos que vão do
+        monitoramento ambiental com redes neurais recorrentes à construção de agentes
+        de linguagem com RAG, passando por classificação de imagens com redes
+        convolucionais. Tenho interesse particular em levar essas técnicas para
+        problemas de saúde, onde os dados carregam consequências reais.
+      </p>
+      <p>
+        Participei ativamente do <strong>PET — Programa Educação Tutorial</strong>,
+        que reúne ensino, pesquisa e extensão na UFC, e do projeto de extensão
+        <strong>PELICAN</strong>, levando conteúdo de inteligência artificial para
+        professores e alunos da rede pública.
+      </p>
+      <p class="edu-line">
+        Universidade Federal do Ceará — Bacharelado em Ciência de Dados
+      </p>
+    </div>
+  </section>
+
+  <section id="projetos" class="section">
+    <h2>Projetos</h2>
+    <div class="project-list">
+
+      <article class="project-row">
+        <div class="project-main">
+          <h3>Detecção de doença cardiovascular</h3>
+          <p>
+            Classificador supervisionado (Random Forest) treinado sobre o dataset
+            real UCI Heart Disease (Cleveland), prevendo a presença de doença
+            cardiovascular a partir de 13 variáveis clínicas. Inclui avaliação
+            completa — acurácia, precisão, recall, F1 e curva ROC — e uma função
+            de predição para novos pacientes.
+          </p>
+          <ul class="project-tags">
+            <li>python</li><li>scikit-learn</li><li>random forest</li><li>dados clínicos</li>
+          </ul>
+        </div>
+        <div class="project-side">
+          <p class="project-stat"><span>0.93</span>AUC-ROC</p>
+          <a href="https://github.com/AdegaxX" target="_blank" rel="noopener">Ver no GitHub</a>
+        </div>
+      </article>
+
+      <article class="project-row">
+        <div class="project-main">
+          <h3>Monitoramento ambiental e predição de incêndios</h3>
+          <p>
+            Processamento de imagens de satélite (Sentinel) e desenvolvimento de
+            uma rede neural LSTM para análise temporal, usada para prever regiões
+            com maior chance de foco de incêndio a partir de padrões espaciais e
+            temporais.
+          </p>
+          <ul class="project-tags">
+            <li>python</li><li>lstm</li><li>imagens de satélite</li>
+          </ul>
+        </div>
+        <div class="project-side">
+          <a href="https://github.com/AdegaxX" target="_blank" rel="noopener">Ver no GitHub</a>
+        </div>
+      </article>
+
+      <article class="project-row">
+        <div class="project-main">
+          <h3>Agente inteligente com RAG e Llama</h3>
+          <p>
+            Arquitetura RAG construída para fornecer conhecimento específico a um
+            agente baseado no modelo Llama, com interface de chat interativa e
+            comparação entre respostas geradas e esperadas para avaliar acurácia.
+          </p>
+          <ul class="project-tags">
+            <li>python</li><li>rag</li><li>llama</li><li>llm</li>
+          </ul>
+        </div>
+        <div class="project-side">
+          <a href="https://github.com/AdegaxX" target="_blank" rel="noopener">Ver no GitHub</a>
+        </div>
+      </article>
+
+      <article class="project-row">
+        <div class="project-main">
+          <h3>Classificação de flores típicas do Ceará</h3>
+          <p>
+            Rede convolucional treinada com data augmentation para classificar
+            espécies de flores locais, com comparação de desempenho contra o
+            modelo ResNetV2 pré-treinado.
+          </p>
+          <ul class="project-tags">
+            <li>python</li><li>tensorflow</li><li>cnn</li><li>resnetv2</li>
+          </ul>
+        </div>
+        <div class="project-side">
+          <a href="https://github.com/AdegaxX" target="_blank" rel="noopener">Ver no GitHub</a>
+        </div>
+      </article>
+
+      <article class="project-row">
+        <div class="project-main">
+          <h3>Site — Encontros Universitários 2025</h3>
+          <p>
+            Interface e estrutura de um site para divulgação de um evento
+            universitário, com informações do evento e link de inscrição.
+          </p>
+          <ul class="project-tags">
+            <li>html</li><li>css</li><li>javascript</li>
+          </ul>
+        </div>
+        <div class="project-side">
+          <a href="https://github.com/AdegaxX" target="_blank" rel="noopener">Ver no GitHub</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="habilidades" class="section">
+    <h2>Habilidades</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Análise e processamento de dados</h3>
+        <ul>
+          <li>Exploração e tratamento de dados</li>
+          <li>Análise estatística</li>
+          <li>Web scraping</li>
+          <li>Power BI</li>
+          <li>Big data</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Programação</h3>
+        <ul>
+          <li>Python</li>
+          <li>R</li>
+          <li>SQL / MySQL / PostgreSQL</li>
+          <li>Pandas · NumPy</li>
+          <li>Scikit-learn</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Inteligência artificial</h3>
+        <ul>
+          <li>Machine learning</li>
+          <li>Visão computacional</li>
+          <li>Processamento de imagens e sons</li>
+          <li>Reconhecimento facial</li>
+          <li>Detecção de anomalias</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Visualização e aplicações</h3>
+        <ul>
+          <li>Matplotlib · Seaborn</li>
+          <li>Streamlit</li>
+          <li>Dashboards</li>
+          <li>Desenvolvimento orientado a dados</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Ferramentas</h3>
+        <ul>
+          <li>Git / GitHub</li>
+          <li>LaTeX</li>
+          <li>Microsoft Office</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="experiencia" class="section">
+    <h2>Experiência</h2>
+    <div class="timeline">
+      <div class="timeline-row">
+        <p class="timeline-period">2019 — 2020</p>
+        <div>
+          <h3>Escriturário — Bradesco S.A.</h3>
+          <p>Fortaleza, CE. Atendimento ao cliente, apoio em operações bancárias
+            e suporte administrativo à agência.</p>
+        </div>
+      </div>
+      <div class="timeline-row">
+        <p class="timeline-period">Formação</p>
+        <div>
+          <h3>PET — Programa Educação Tutorial</h3>
+          <p>Participação ativa em um programa que integra ensino, pesquisa e
+            extensão na Universidade Federal do Ceará.</p>
+        </div>
+      </div>
+      <div class="timeline-row">
+        <p class="timeline-period">Projeto de extensão</p>
+        <div>
+          <h3>PELICAN — Educação em Inteligência Artificial</h3>
+          <p>Disseminação de conhecimento sobre inteligência artificial para
+            professores e alunos da rede pública de ensino.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contato" class="site-footer">
+  <div>
+    <h2>Contato</h2>
+    <p>Aberto a conversar sobre oportunidades ou projetos.</p>
+  </div>
+  <div class="footer-links">
+    <a href="mailto:leandroadegas2@gmail.com">leandroadegas2@gmail.com</a>
+    <a href="tel:+5585992335556">+55 (85) 99233-5556</a>
+    <a href="https://github.com/AdegaxX" target="_blank" rel="noopener">github.com/AdegaxX</a>
+    <a href="https://br.linkedin.com/in/leandroadegas" target="_blank" rel="noopener">linkedin.com/in/leandroadegas</a>
+  </div>
+  <p class="footer-note">Itapajé, Ceará, Brasil</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
